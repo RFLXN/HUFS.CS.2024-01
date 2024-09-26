@@ -1,0 +1,19 @@
+{
+  "name": "computer-secutiry",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "yarn run clean",
+    "build": "tsc",
+    "prestart": "yarn run build",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0"
+  }
+}
